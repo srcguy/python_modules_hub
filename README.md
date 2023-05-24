@@ -1,4 +1,4 @@
 # Python Modules Hub
 
 Python Modules Hub is a application, that runs python scripts and .exe programs
-For help, search README in PMH version directory
+For help, search README in downloaded folder

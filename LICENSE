@@ -2,9 +2,17 @@ Tea Team license for open-source software v. 1
 
 Copyright © 2023 Bruno Szewczyk
 
-This license gives the user permission to:
-Use the software for his/her own
-Analyze the source code
-Modify the source code for his/her own
+0 Definitions and terms:
+"License" refers to Tea Team license for open-source software v. 1.
+"Software" refers to a computer program licensed under this license.
+"User" refers to a person who interact or interacted with software.
+User automatically agrees with that license after an interaction with software.
 
-User can't do anything else with this software
+1 Using the software:
+User can use the software for his/her own.
+User can analyze the source code of the software if source code is publically available.
+
+2 Modifying the software:
+User can modify the software for his/her own.
+
+User can't do anything else with the software.

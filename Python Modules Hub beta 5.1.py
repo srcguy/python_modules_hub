@@ -11,8 +11,6 @@ def reset():
     main()
 
 def run_module(module_name):
-    error_blind = tk.Label(root, text="© 2023 src_guy", fg="black")
-    error_blind.grid(row=4, column=0)
     file_exe = open("modules_exe.txt")
     file_py = open("modules_py.txt")
     temp_exe = file_exe.read().splitlines()
@@ -23,7 +21,7 @@ def run_module(module_name):
             os.system("start " + module_name + ".py")
         else:
             error = tk.Label(root, text="File doesn't exist", fg="red")
-            error.grid(row=4, column=0)
+            error.place(relx = 0.43, rely = 0.8)
 
     if module_name in temp_exe:
         file_exist = os.path.exists(module_name + '.exe')
@@ -31,11 +29,9 @@ def run_module(module_name):
             os.system("start " + module_name + ".exe")
         else:
             error = tk.Label(root, text="File doesn't exist", fg="red")
-            error.grid(row=4, column=0)
+            error.place(relx = 0.43, rely = 0.8)
     
 def run_command():
-    error_blind = tk.Label(root, text="© 2023 src_guy", fg="black")
-    error_blind.grid(row=4, column=0)
     command = command_raw.get()
     result = command.split()
     if result[0] == "new":
@@ -75,8 +71,6 @@ def run_command():
     reset()
 
 def run():
-    error_blind = tk.Label(root, text="© 2023 src_guy", fg="black")
-    error_blind.grid(row=4, column=0)
     index = index_raw.get()
     result = index.split() #every word to list
     if result[0] == "py":
@@ -85,14 +79,14 @@ def run():
             os.system("start " + result[1] + ".py")
         else:
             error = tk.Label(root, text="File doesn't exist", fg="red")
-            error.grid(row=3, column=1)
+            error.place(relx = 0.43, rely = 0.8)
     if result[0] == "exe":
         file_exist = os.path.exists(result[1] + '.exe')
         if file_exist == True:
             os.system("start " + result[1] + ".exe")
         else:
             error = tk.Label(root, text="File doesn't exist", fg="red")
-            error.grid(row=4, column=0)
+            error.place(relx = 0.43, rely = 0.8)
 
 def main():        
     global root   
@@ -109,7 +103,7 @@ def main():
     index_raw = tk.StringVar()
     command_raw = tk.StringVar()
 
-    title = tk.Label(root, text="Python Modules Hub\n beta 4.0", font='Arial 17 bold', fg='#1ce4eb', bg="#ff0a0e")
+    title = tk.Label(root, text="Python Modules Hub\n beta 5.1", font='Arial 17 bold', fg='#1ce4eb', bg="#ff0a0e")
     title.place(relx = 0.5, anchor = N)
     
     blank = tk.Label(root, text=" \n \n", font="Arial 17 bold")
